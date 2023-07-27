@@ -26,7 +26,6 @@ const updateUserService = async (
     ...oldUserData,
     ...userData,
   } as DeepPartial<User>)
-  console.log(newUserData)
 
   const validateResponse = userSchemaResponse.parse(newUserData)
 

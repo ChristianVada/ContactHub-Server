@@ -2,24 +2,21 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  OneToMany,
+  ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm"
-import Contact from "./contact.entitie"
+import User from "./user.entities"
 
-@Entity("users")
-class User {
+@Entity("contacts")
+class Contact {
   @PrimaryGeneratedColumn("uuid")
   id: string
 
   @Column({ type: "varchar" })
   name: string
 
-  @Column({ type: "varchar", unique: true })
-  email: string
-
   @Column({ type: "varchar" })
-  password: string
+  email: string
 
   @Column({ type: "varchar" })
   telephone: string
@@ -27,8 +24,8 @@ class User {
   @CreateDateColumn({ type: "date" })
   created_at: Date
 
-  @OneToMany(() => Contact, (contact) => contact.user)
-  contact: Contact[]
+  @ManyToOne(() => User, (user) => user.contact, { nullable: false })
+  user: User
 }
 
-export default User
+export default Contact
