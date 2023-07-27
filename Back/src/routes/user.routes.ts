@@ -12,7 +12,7 @@ import {
   userSchemaRequestUpdate,
 } from "../schemas/user.schema"
 import ensureEmailNotExists from "../middlewares/ensureEmailNotExists.middleware"
-import ensureTokenIsValid from "../middlewares/ensureTokenIsValid.middleware copy"
+import ensureTokenIsValid from "../middlewares/ensureTokenIsValid.middleware"
 import ensureIdExists from "../middlewares/ensureIdExist.middleware"
 
 const userRoutes = Router()

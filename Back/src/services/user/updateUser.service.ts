@@ -1,11 +1,11 @@
 import { DeepPartial } from "typeorm"
-import AppDataSource from "../data-source"
-import User from "../entities/user.entities"
+import AppDataSource from "../../data-source"
+import User from "../../entities/user.entities"
 import {
   TUserRequestUpdate,
   TUserResponse,
-} from "../interfaces/user.interfaces"
-import { userSchemaResponse } from "../schemas/user.schema"
+} from "../../interfaces/user.interfaces"
+import { userSchemaResponse } from "../../schemas/user.schema"
 import { hash } from "bcryptjs"
 
 const updateUserService = async (

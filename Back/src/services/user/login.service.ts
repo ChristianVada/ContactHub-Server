@@ -1,10 +1,10 @@
-import AppDataSource from "../data-source"
-import User from "../entities/user.entities"
-import { AppError } from "../errors/AppError"
+import AppDataSource from "../../data-source"
+import User from "../../entities/user.entities"
+import { AppError } from "../../errors/AppError"
 import * as bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
 import "dotenv/config"
-import { TUserLogin } from "../interfaces/user.interfaces"
+import { TUserLogin } from "../../interfaces/user.interfaces"
 
 const loginService = async (
   userData: TUserLogin
