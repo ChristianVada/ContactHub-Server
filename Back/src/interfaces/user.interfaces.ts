@@ -1,5 +1,6 @@
 import { z } from "zod"
 import {
+  userLoginSchema,
   userSchema,
   userSchemaRequest,
   userSchemaRequestUpdate,
@@ -12,4 +13,6 @@ type TUserResponse = z.infer<typeof userSchemaResponse>
 
 type TUserRequestUpdate = z.infer<typeof userSchemaRequestUpdate>
 
-export { TUser, TUserRequest, TUserResponse, TUserRequestUpdate }
+type TUserLogin = z.infer<typeof userLoginSchema>
+
+export { TUser, TUserRequest, TUserResponse, TUserRequestUpdate, TUserLogin }

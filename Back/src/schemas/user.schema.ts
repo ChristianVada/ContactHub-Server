@@ -21,9 +21,15 @@ const userSchemaResponse = userSchema.omit({ password: true })
 
 const userSchemaRequestUpdate = userSchemaRequest.partial()
 
+const userLoginSchema = z.object({
+  email: z.string().email(),
+  password: z.string(),
+})
+
 export {
   userSchema,
   userSchemaRequest,
   userSchemaResponse,
   userSchemaRequestUpdate,
+  userLoginSchema,
 }
