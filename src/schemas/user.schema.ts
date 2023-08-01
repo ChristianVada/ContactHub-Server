@@ -1,6 +1,6 @@
 import { z } from "zod"
 
-const phoneNumberRegex = /^\(\d{2}\)\d-\d{4}-\d{4}$/
+const phoneNumberRegex = /^\d{10,11}$/
 
 const PhoneSchema = z.string().refine((value) => phoneNumberRegex.test(value), {
   message: "Invalid phone number format. Should be (XX)X-XXXX-XXXX",
