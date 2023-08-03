@@ -3,7 +3,7 @@ import { z } from "zod"
 const phoneNumberRegex = /^\d{10,11}$/
 
 const PhoneSchema = z.string().refine((value) => phoneNumberRegex.test(value), {
-  message: "Invalid phone number format. Should be (XX)X-XXXX-XXXX",
+  message: "Invalid phone number format. Should be 10 or 11 numbers",
 })
 
 const userSchema = z.object({
