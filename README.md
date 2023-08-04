@@ -42,7 +42,7 @@ O projeto ContactHub foi desenvolvido utilizando as seguintes tecnologias:
 ## Como Usar
 
 1. Clone este repositório.
-2. Instale as dependências necessárias usando o comando: `npm install`.
+2. Instale as dependências necessárias usando o comando: `npm install` ou `yarn`.
 3. Configure o ambiente e o banco de dados de acordo com as instruções fornecidas no arquivo `.env.exemple`.
-4. Instale a migração através do comando `npm run typeorm migration:run -- -d src/data-source`.
-5. Inicie a aplicação com o comando: `npm run dev`.
+4. Instale a migração através do comando `npm run typeorm migration:run -- -d src/data-source` ou `yarn typeorm migration:run -d src/data-source`.
+5. Inicie a aplicação com o comando: `npm run dev` ou `yarn dev`.
