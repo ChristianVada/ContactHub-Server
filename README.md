@@ -4,7 +4,7 @@
 
 O ContactHub é uma aplicação web de gerenciamento de contatos que permite o cadastro de clientes e seus respectivos contatos. Com o ContactHub, você pode facilmente cadastrar, visualizar, atualizar e excluir clientes e seus contatos associados, além de ter acesso a um relatório completo que apresenta informações sobre o cliente e os contatos vinculados a ele.
 
-Front end: 
+[Repositório Front-end](https://github.com/ChristianVada/ContactHub-Client)
 
 ## Funcionalidades
 
